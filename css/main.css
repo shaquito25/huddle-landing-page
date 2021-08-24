@@ -1,0 +1,77 @@
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("/images/bg-desktop.svg");
+    background-position: -180% 24%;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    background-color: white;
+    color: hsl(300, 69%, 71%);
+}
+
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+a{
+    padding: 10px;  
+    border: 1px solid white;
+    border-radius: 100%;
+    color: white; 
+    margin: 0px 5px 0 5px; 
+
+}
+
+a:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+i{
+    color: white;
+}
+
+/* Small DEVICES*/
+
+@media(max-width:576px){
+    body{
+        background-image: url("/images/bg-mobile.svg"); 
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .w-50{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin-left: 25px;
+    }   
+
+    div h1{
+        font-size: 20px !important;
+    }
+
+    .w-25{
+        width: 70% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    section img { 
+        width: 300px !important;
+        height: 200px !important;
+        margin: auto !important;
+    }
+
+    footer{
+        display: flex !important;
+        justify-content: center !important;
+        margin-left: -50px;
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+}
